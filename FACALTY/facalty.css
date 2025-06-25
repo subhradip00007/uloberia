@@ -1,0 +1,104 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+.faculty-section h2 {
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+thead {
+  background-color: #007acc;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ddd;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+  td::before {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  tr {
+    margin-bottom: 1rem;
+    background: #fff;
+    padding: 10px;
+  }
+}
